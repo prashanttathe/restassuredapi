@@ -24,6 +24,6 @@ COPY build.gradle /app/build.gradle
 COPY . /app
 
 RUN gradle build
-RUN gradle test
+#RUN gradle test
 
 # add app
