@@ -20,6 +20,9 @@ ENV GRADLE_HOME /usr/local/gradle
 ENV PATH ${PATH}:${GRADLE_HOME}/bin
 ENV GRADLE_USER_HOME /gradle
 
+COPY build.gradle /app/build.gradle
+COPY . /app
+
 RUN gradle build
 RUN gradle test
 
