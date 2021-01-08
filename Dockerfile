@@ -6,6 +6,7 @@ RUN apk add openjdk11
 RUN java --version
 
 # Install gradle
+ENV GRADLE_VERSION 6.8
 WORKDIR /usr/local
 RUN wget  https://services.gradle.org/distributions/gradle-$GRADLE_VERSION-bin.zip && \
     unzip gradle-$GRADLE_VERSION-bin.zip && \
