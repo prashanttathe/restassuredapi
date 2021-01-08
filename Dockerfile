@@ -21,5 +21,6 @@ ENV PATH ${PATH}:${GRADLE_HOME}/bin
 ENV GRADLE_USER_HOME /gradle
 
 RUN gradle build
+RUN gradle test
 
 # add app
