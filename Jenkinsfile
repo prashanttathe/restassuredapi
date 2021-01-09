@@ -13,7 +13,7 @@ pipeline {
 				sh """
 					JOB_NAME=${env.JOB_BASE_NAME}
 					rm -f /var/lib/jenkins/workspace/\$JOB_NAME/build/reports/tests/test/index.html
-					cp /app/build/reports/tests/test/index.html /var/lib/jenkins/workspace/\$JOB_NAME
+					cp /app/build/reports/tests/test/index.html /var/lib/jenkins/workspace/\$JOB_NAME//build/reports/tests/test/
 				   """
 				//sh 'cp /app//build/reports/tests/test/index.html /var/lib/jenkins/workspace/${env.BUILD_TAG}'
 				
