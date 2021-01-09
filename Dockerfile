@@ -25,5 +25,7 @@ COPY . /app
 
 RUN gradle build
 #RUN gradle test
+WORKDIR /app/build/reports/tests/test/
+RUN ls -lh
 
 # add app
