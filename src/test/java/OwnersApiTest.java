@@ -30,15 +30,15 @@ public class OwnersApiTest {
         Thread.sleep(4000);
 
         //3. Fetching owner details by newly created id in 2. Method- GET
-        getOwner_byId();
+        //getOwner_byId();
 
         Thread.sleep(3000);
 
         //4.Updating the owner details. Method- PUT
-        updateOwner_addingDetails();
+        //updateOwner_addingDetails();
 
         //5. Deleting the owner details. Method -DELETE
-        deleteOwner_byId();
+        //deleteOwner_byId();
     }
 
 
