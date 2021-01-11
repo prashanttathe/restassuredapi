@@ -12,8 +12,8 @@ pipeline {
 				//sh 'rm -f /var/lib/jenkins/workspace/FEI_PetClinic_RestAssuredapi/build/reports/tests/test/index.html'
 				sh """
 					JOB_NAME=${env.JOB_BASE_NAME}
-					rm -f /var/lib/jenkins/workspace/\$JOB_NAME/build/reports/tests/test/index.html
-					cp /app/build/reports/tests/test/index.html /var/lib/jenkins/workspace/\$JOB_NAME//build/reports/tests/test/
+					rm -rf /var/lib/jenkins/workspace/\$JOB_NAME/build/reports/tests/test
+					cp -R /app/build/reports/tests/test/ /var/lib/jenkins/workspace/\$JOB_NAME//build/reports/tests/
 				   """
 				//sh 'cp /app//build/reports/tests/test/index.html /var/lib/jenkins/workspace/${env.BUILD_TAG}'
 				
